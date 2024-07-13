@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>DND 3.5 CS</title>
+        <meta name="description" content="Dnd 3.5 character sheet" />
+        <meta name="author" content="Anthony H. Grasso" />
+
+        <link rel="stylesheet" type="text/css" href="new.css" />
+    </head>
+    <body>
+        <div class="whole">
+            <div class="input">
+                <label for="cname">Character Name</label>
+                <input type="text" id="cname" name="cname" />
+            </div>
+            <div class="input">
+                <label for="pname">Player Name</label>
+                <input type="text" id="pname" name="pname" />
+            </div>
+            <div class="input">
+                <label for="spec">Class</label>
+                <select name="spec" id="spec">
+                    <option>Barbarian</option>
+                    <option>Bard</option>
+                    <option>Cleric</option>
+                    <option>Druid</option>
+                    <option>Fighter</option>
+                    <option>Monk</option>
+                    <option>Paladin</option>
+                    <option>Ranger</option>
+                    <option>Rogue</option>
+                    <option>Sorcerer</option>
+                    <option>Wizard</option>
+                </select>
+            </div>
+            <div class="input">
+                <label for="race">Race</label>
+                <select name="race" id="race">
+                    <option>Human</option>
+                    <option>Dwarf</option>
+                    <option>Elf</option>
+                    <option>Gnome</option>
+                    <option>Half-Elf</option>
+                    <option>Half-Orc</option>
+                    <option>Halfling</option>
+                </select>
+            </div>
+            <div class="input">
+                <label for="size">Size</label>
+                <select name="size" id="size">
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+            </div>
+            <div class="input">
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="input">
+                <label for="align">Alignment</label>
+                <select name="align" id="align">
+                    <option>Lawful Good</option>
+                    <option>Neutral Good</option>
+                    <option>Chaotic Good</option>
+                    <option>Lawful Neutral</option>
+                    <option>True Neutral</option>
+                    <option>Chaotic Neutral</option>
+                    <option>Lawful Evil</option>
+                    <option>Neutral Evil</option>
+                    <option>Chaotic Evil</option>
+                </select>
+            </div>
+            <div class="input">
+                <label for="god">Religion</label>
+                <select name="god" id="god">
+                    <option>Boccob</option>
+                    <option>
+                        Corellon Larethian
+                    </option>
+                    <option>Ehloona</option>
+                    <option>Erythnul</option>
+                    <option>Fharlanghn</option>
+                    <option>Garl Glittergold</option>
+                    <option>Gruumsh</option>
+                    <option>Heironeous</option>
+                    <option>Hextor</option>
+                    <option>Kord</option>
+                    <option>Moradin</option>
+                    <option>Nerull</option>
+                    <option>Obad-Hai</option>
+                    <option>Olidammara</option>
+                    <option>Pelor</option>
+                    <option>St. Cuthbert</option>
+                    <option>Vecna</option>
+                    <option>Wee Jas</option>
+                    <option>Yondalla</option>
+                </select>
+            </div>
+            <div class="input">
+                <label for="str">Str</label>
+                <input type="number" id="str" name="str"
+                    value="1" min="1" max="18" />
+            </div>
+            <div class="input">
+                <label for="dex">Dex</label>
+                <input type="number" id="dex" name="dex"
+                    value="1" min="1" max="18" />
+            </div>
+            <div class="input">
+                <label for="con">Con</label>
+                <input type="number" id="con" name="con"
+                    value="1" min="1" max="18" />
+            </div>
+            <div class="input">
+                <label for="int">Int</label>
+                <input type="number" id="int" name="int"
+                    value="1" min="1" max="18" />
+            </div>
+            <div class="input">
+                <label for="wis">Wis</label>
+                <input type="number" id="wis" name="wis"
+                    value="1" min="1" max="18" />
+            </div>
+            <div class="input">
+                <label for="cha">Cha</label>
+                <input type="number" id="cha" name="cha"
+                    value="1" min="1" max="18" />
+            </div>
+            <div class="input">
+                <label for="hitdie">HitDie</label>
+                <input type="number" id="hitdie" name="hitdie"
+                    value="1" min="1" max="10" />
+            </div>
+            <div class="button">
+                <button onclick="save()">Save</button>
+            </div>
+        </div>
+        <button onclick="gotoIndexPage()">Index</button>
+        <script src="new.js"></script>
+    </body>
+</html>

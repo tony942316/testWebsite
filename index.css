@@ -1,0 +1,56 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 16px;
+}
+
+body
+{
+    background-color: #444444;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    border: solid black 5px;
+
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-columns: 1fr;
+}
+
+.head
+{
+    border: solid red 5px;
+}
+
+.summarydisplay
+{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.summarydisplaydata
+{
+    border-bottom: 1px solid;
+}
+
+.ascores
+{
+    border: solid navy 5px;
+}
+
+.abilitydisplaydatamod
+{
+    border: solid white 1px;
+}
+
+.other
+{
+    border: solid green 5px;
+}

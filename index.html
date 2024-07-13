@@ -9,23 +9,103 @@
         <meta name="description" content="Dnd 3.5 character sheet" />
         <meta name="author" content="Anthony H. Grasso" />
 
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="icon" type="image/svg+xml" sizes="any" href="dice-d20.svg" />
+        <link rel="stylesheet" type="text/css" href="index.css" />
     </head>
     <body>
-        <main>
-            <h1>Dnd</h1>
-            <form>
-                <label for="charname">Character Name:</label>
-                <input type="text" id="charname" name="charname" />
-                <label for="pname">Player Name:</label>
-                <input type="text" id="pname" name="pname" />
-            </form>
-            <label for="Classes">Choose your class</label>
-            <select name="Classes" id="Classes">
-                <option value="paladin">Paladin</option>
-            </select>
-            <button onclick="button()">Push Me!</button>
-        </main>
-        <script src="script.js"></script>
+        <div class="head">
+            <div class="summarydisplay">
+                <span class="summarydisplaydata" id="cname">N.A.</span>
+                <span class="summarydisplaylabel">Character Name</span>
+            </div>
+            <div class="summarydisplay">
+                <span class="summarydisplaydata" id="pname">N.A.</span>
+                <span class="summarydisplaylabel">Player Name</span>
+            </div>
+            <div class="summarydisplay">
+                <span class="summarydisplaydata" id="spec">N.A.</span>
+                <span class="summarydisplaylabel">Class</span>
+            </div>
+            <div class="summarydisplay">
+                <span class="summarydisplaydata" id="race">N.A.</span>
+                <span class="summarydisplaylabel">Race</span>
+            </div>
+            <div class="summarydisplay">
+                <span class="summarydisplaydata" id="size">N.A.</span>
+                <span class="summarydisplaylabel">Size</span>
+            </div>
+            <div class="summarydisplay">
+                <span class="summarydisplaydata" id="gender">N.A.</span>
+                <span class="summarydisplaylabel">Gender</span>
+            </div>
+            <div class="summarydisplay">
+                <span class="summarydisplaydata" id="align">N.A.</span>
+                <span class="summarydisplaylabel">Alignment</span>
+            </div>
+            <div class="summarydisplay">
+                <span class="summarydisplaydata" id="god">N.A.</span>
+                <span class="summarydisplaylabel">Religion</span>
+            </div>
+        </div>
+        <div class="ascores">
+            <div class="abilitydisplay">
+                <span class="abilitydisplaylabel">Str:</span>
+                <span class="abilitydisplaydatatot" id="strtot">0</span>
+                <span class="abilitydisplaydatabase" id="strbase">0</span>
+                <span class="abilitydisplaydatabonus" id="strbonus">0</span>
+                <span class="abilitydisplaydatamisc" id="strmisc">0</span>
+                <span class="abilitydisplaydatanmisc" id="strnmisc">0</span>
+                <span class="abilitydisplaydatamod" id="strmod">0</span>
+            </div>
+            <div class="abilitydisplay">
+                <span class="abilitydisplaylabel">Dex:</span>
+                <span class="abilitydisplaydatatot" id="dextot">0</span>
+                <span class="abilitydisplaydatabase" id="dexbase">0</span>
+                <span class="abilitydisplaydatabonus" id="dexbonus">0</span>
+                <span class="abilitydisplaydatamisc" id="dexmisc">0</span>
+                <span class="abilitydisplaydatanmisc" id="dexnmisc">0</span>
+                <span class="abilitydisplaydatamod" id="dexmod">0</span>
+            </div>
+            <div class="abilitydisplay">
+                <span class="abilitydisplaylabel">Con:</span>
+                <span class="abilitydisplaydatatot" id="contot">0</span>
+                <span class="abilitydisplaydatabase" id="conbase">0</span>
+                <span class="abilitydisplaydatabonus" id="conbonus">0</span>
+                <span class="abilitydisplaydatamisc" id="conmisc">0</span>
+                <span class="abilitydisplaydatanmisc" id="connmisc">0</span>
+                <span class="abilitydisplaydatamod" id="conmod">0</span>
+            </div>
+            <div class="abilitydisplay">
+                <span class="abilitydisplaylabel">Int:</span>
+                <span class="abilitydisplaydatatot" id="inttot">0</span>
+                <span class="abilitydisplaydatabase" id="intbase">0</span>
+                <span class="abilitydisplaydatabonus" id="intbonus">0</span>
+                <span class="abilitydisplaydatamisc" id="intmisc">0</span>
+                <span class="abilitydisplaydatanmisc" id="intnmisc">0</span>
+                <span class="abilitydisplaydatamod" id="intmod">0</span>
+            </div>
+            <div class="abilitydisplay">
+                <span class="abilitydisplaylabel">Wis:</span>
+                <span class="abilitydisplaydatatot" id="wistot">0</span>
+                <span class="abilitydisplaydatabase" id="wisbase">0</span>
+                <span class="abilitydisplaydatabonus" id="wisbonus">0</span>
+                <span class="abilitydisplaydatamisc" id="wismisc">0</span>
+                <span class="abilitydisplaydatanmisc" id="wisnmisc">0</span>
+                <span class="abilitydisplaydatamod" id="wismod">0</span>
+            </div>
+            <div class="abilitydisplay">
+                <span class="abilitydisplaylabel">Cha:</span>
+                <span class="abilitydisplaydatatot" id="chatot">0</span>
+                <span class="abilitydisplaydatabase" id="chabase">0</span>
+                <span class="abilitydisplaydatabonus" id="chabonus">0</span>
+                <span class="abilitydisplaydatamisc" id="chamisc">0</span>
+                <span class="abilitydisplaydatanmisc" id="chanmisc">0</span>
+                <span class="abilitydisplaydatamod" id="chamod">0</span>
+            </div>
+        </div>
+        <div class="other">
+
+        </div>
+        <script src="index.js"></script>
     </body>
 </html>
